@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"d59448d2500ef7b0","x":-120,"y":380,"width":250,"height":60,"type":"text","text":""},
+		{"id":"3033a754fa15d49a","x":-60,"y":-48,"width":290,"height":267,"color":"4","type":"text","text":"Ela vem do Francês loge, do Frâncico laubjan, “abrigo feito de ramos e folhagens”. Nas feiras antigas muitas vezes as vendas eram feitas em abrigos precários, que acabaram evoluindo para dar maior conforto e segurança para vendedores e compradores."},
+		{"id":"043582d0c20c0086","x":840,"y":-880,"width":540,"height":405,"type":"file","file":"Pasted image 20241007123007.png"},
+		{"id":"fecbe66434791939","x":280,"y":-856,"width":476,"height":357,"type":"file","file":"Pasted image 20241007123227.png"},
+		{"id":"5354168c43bbe863","x":-520,"y":-220,"width":298,"height":50,"color":"1","type":"text","text":"pagina de login / registro do site"},
+		{"id":"cc3bf99ef940116e","x":-492,"y":755,"width":250,"height":60,"color":"1","type":"text","text":"home"},
+		{"id":"abc3135a004cc498","x":-520,"y":1575,"width":268,"height":50,"color":"1","type":"text","text":"Lojas\n"},
+		{"id":"ac9d307672e7d7db","x":-1840,"y":1425,"width":400,"height":300,"type":"file","file":"Pasted image 20241007123827.png"},
+		{"id":"97ed38ea639bebfa","x":-2000,"y":-220,"width":400,"height":300,"type":"file","file":"Pasted image 20241007123650.png"},
+		{"id":"19d174f573726e16","x":-1200,"y":560,"width":250,"height":75,"color":"3","type":"text","text":"brasil aesthetic "},
+		{"id":"45b6d75fa06d118b","x":-2240,"y":355,"width":520,"height":520,"type":"file","file":"Pasted image 20241007123942.png"}
+	],
+	"edges":[
+		{"id":"3ca3e7a3e482bad8","fromNode":"5354168c43bbe863","fromSide":"right","toNode":"3033a754fa15d49a","toSide":"left"},
+		{"id":"97b5622c90058641","fromNode":"3033a754fa15d49a","fromSide":"right","toNode":"043582d0c20c0086","toSide":"bottom","color":"4"},
+		{"id":"5016303235655171","fromNode":"3033a754fa15d49a","fromSide":"right","toNode":"fecbe66434791939","toSide":"left","color":"4"},
+		{"id":"e9c8e54573978c74","fromNode":"5354168c43bbe863","fromSide":"left","toNode":"19d174f573726e16","toSide":"right","color":"3"},
+		{"id":"94d18c55b2165bf8","fromNode":"5354168c43bbe863","fromSide":"bottom","toNode":"cc3bf99ef940116e","toSide":"top","color":"1"},
+		{"id":"e5ff4f7b51accd1f","fromNode":"cc3bf99ef940116e","fromSide":"bottom","toNode":"abc3135a004cc498","toSide":"top","color":"1"},
+		{"id":"04ba89116484aa3a","fromNode":"cc3bf99ef940116e","fromSide":"left","toNode":"19d174f573726e16","toSide":"right","color":"3"},
+		{"id":"434a5f9c7f232016","fromNode":"abc3135a004cc498","fromSide":"left","toNode":"19d174f573726e16","toSide":"right","color":"3"},
+		{"id":"eac6ede9f30f3eb5","fromNode":"19d174f573726e16","fromSide":"left","toNode":"ac9d307672e7d7db","toSide":"top","color":"3"},
+		{"id":"daf3df67f03ad15c","fromNode":"19d174f573726e16","fromSide":"left","toNode":"97ed38ea639bebfa","toSide":"right","color":"3"},
+		{"id":"979a685dfbc697e9","fromNode":"abc3135a004cc498","fromSide":"bottom","toNode":"ac9d307672e7d7db","toSide":"right","label":"local?"},
+		{"id":"f90e97ec3d467272","fromNode":"19d174f573726e16","fromSide":"left","toNode":"45b6d75fa06d118b","toSide":"right","color":"3"}
+	]
+}
