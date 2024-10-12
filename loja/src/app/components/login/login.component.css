@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  background-color: #f4f4f4; /* Cor de fundo suave */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+}
+
+.main {
+  display: flex; /* Usando flexbox para centralizar */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Ocupa a altura total da tela */
+}
+
+.card {
+  background: white; /* Cor de fundo da carta */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: 300px; /* Largura fixa */
+}
+
+h1 {
+  text-align: center; /* Centraliza o título */
+}
+
+.form {
+  display: flex; /* Usando flexbox para layout */
+  flex-direction: column; /* Coluna vertical */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Espaçamento entre os campos */
+}
+
+label {
+  margin-bottom: 5px; /* Espaçamento entre o label e o campo */
+  font-weight: bold; /* Negrito para o label */
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%; /* Largura total do campo */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda do campo */
+  border-radius: 4px; /* Cantos arredondados */
+}
+
+button {
+  width: 100%; /* Largura total do botão */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #4CAF50; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remove borda */
+  border-radius: 4px; /* Cantos arredondados */
+  cursor: pointer; /* Altera o cursor ao passar o mouse */
+}
+
+button:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
