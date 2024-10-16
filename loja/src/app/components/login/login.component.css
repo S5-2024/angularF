@@ -6,7 +6,7 @@
 
 /* .main: é a plano geral da parte do login*/
 .main {
-  background-color: red;
+  background-color: rgb(33, 85, 163);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -16,7 +16,7 @@
 
 /* .card: O cartão de login*/
 .card {
-  background-color: aqua;
+  background-color: rgba(253, 186, 233, 0.747);
   width: 40%;
   height: 550px;
 }
@@ -25,22 +25,28 @@
  Dentro do .form está os labels, inputs, a div "botoes"
  */
 .form {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
   margin-bottom: 15px;
 
 }
+.label{
+  
+}
 
 /* .input: Estilo dos campos de inputs (senha e email)*/
 .input {
-  width: 100%;
+  width: 80%;
   height: 7%;
   border-radius: 2%;
   border-style: solid;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 10px;
+  
 }
 .input:focus{
   border-color: blue; 
