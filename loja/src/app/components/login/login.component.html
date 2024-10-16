@@ -1,17 +1,48 @@
 <div class="main">
-
+  <!-- Verifica se é login -->
+  @if(isLogin){
   <div class="card">
-    <h1> Login / Registro</h1>
+    <h1>Login</h1>
 
-    <form action="" class="form">
-      <li>
-        <ul>Email: </ul>
-        <ul>Senha: </ul>
-      </li>
-      <button > Entrar</button>
+    <form class="form">
+
+      <mat-form-field appearance="fill">
+        <mat-label for="email">Email</mat-label>
+        <mat-icon matPrefix>mail</mat-icon>
+        <input type="email" matInput placeholder="email" id="email" class="input">
+        <mat-label for="senha">Senha</mat-label>
+        <input type="password" placeholder="senha" id="senha" class="input">
+        
+        <div class="botoes">
+          
+        <button class="botao">Entrar</button>
+          <button class="botao">Login com o Google </button>
+          <!-- Botão para alternar para o formulário de registro -->
+          <button (click)="toggleForm()" class="botao" id="botao_modo">Ir para Registro</button>
+    
+        </div>
+      </mat-form-field>
+      
+   
+      
+      
     </form>
-
+ 
   </div>
 
 
+  }@else{
+  <div class="card-registro">
+    <h1>Registro a </h1>
+    <form class="form">
+      <label for="email">Email</label>
+      <input type="email" placeholder="email" id="email">
+      <label for="senha">Senha</label>
+      <input type="password" placeholder="senha" id="senha">
+      <button>Registrar</button>
+    </form>
+    <!-- Botão para alternar para o formulário de login -->
+    <button (click)="toggleForm()">Ir para Login</button>
+  </div>
+  }
 </div>
