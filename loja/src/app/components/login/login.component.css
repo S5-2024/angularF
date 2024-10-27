@@ -1,6 +1,4 @@
-
-
-/* .main: é a plano geral da parte do login*/
+/* .main: é o plano geral da parte do login */
 .main {
   background-color: rgb(33, 85, 163);
   width: 100vw;
@@ -10,78 +8,99 @@
   align-items: center;
 }
 
-/* .card: O cartão de login*/
+/* .card: O cartão de login */
 .card {
-  background-color: rgba(253, 186, 233, 0.747);
-  width: 20%;
-  height: 60%;
- 
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 40%;
+  height: 80%;
 }
- 
 
-/* .form:  Está dentro do .card. 
- Dentro do .form está os labels, inputs, a div "botoes"
- */
+/* .form: Está dentro do .card */
 .form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px; /* Aumenta o espaço entre os campos */
   align-items: center;
   width: 100%;
-  height: 50%;
-  
+  height: 500px;
+  padding: 20px;
 }
-label{
+
+label {
   float: left;
   width: 80%;
 }
 
-/* .input: Estilo dos campos de inputs (senha e email)*/
+/* .input: Estilo dos campos de inputs (senha e email) */
 .input {
   width: 80%;
-  height: 40px;
+  height: 45px; /* Aumenta a altura dos inputs */
   border-radius: 15px;
-  border-style: solid;
-
+  border: 2px solid transparent; /* Para um melhor efeito de foco */
   padding: 10px;
-  
-}
-.input:focus{
-  border-color: blue; 
-    outline: none; 
-    background-color: #f0f8ff;
+  transition: border-color 0.3s; /* Suaviza a transição da borda */
 }
 
+.input:focus {
+  border-color: blue;
+  outline: none;
+  background-color: #f0f8ff;
+}
 
-/*.botoes:  dentro dessa div tem todos os botões:
-   bt: Entrar
-   bt: Login com o Google
-   bt: Registro*/
+/* .botoes: Contém todos os botões */
 .botoes {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30%;
-  width: 100%;
-
-}
-
-/* .botao: todas os botões ganha essa classe*/
-.botao {
+  height:  80%;
   width: 80%;
-  height: 30px;
-  border-radius: 8px;
-  border-style: none;
-  margin-top: 10px;
-
 }
 
-/* Estilização individual dos botões*/
+/* .botao: Estilização comum a todos os botões */
+.botao {
+  width: 60%;
+  height: 20%; /* Aumenta a altura dos botões */
+  border-radius: 8px;
+  border: none; /* Remove a borda padrão */
+  margin-top: 10px;
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  color: black; /* Texto em branco */
+  cursor: pointer; /* Muda o cursor para pointer */
+  transition: background-color 0.3s, transform 0.2s; /* Suaviza a transição */
+}
 
-/* #botao_modo: Botão de registro ganha esse ID*/
+/* Estilização individual dos botões */
+.botao:hover {
+  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+#botao_login {
+  background-color: #007bff; /* Azul para o botão de login */
+}
+
+#botao_google {
+  background-color: #db4437; /* Vermelho para o botão do Google */
+}
 
 #botao_modo {
+  background-color: #4caf50; /* Verde para o botão de registro */
+}
 
-  color: green;
+/* Efeito de hover para botões individuais */
+#botao_login:hover {
+  background-color: #0056b3; /* Azul escuro ao passar o mouse */
+}
+
+#botao_google:hover {
+  background-color: #c13525; /* Vermelho escuro ao passar o mouse */
+}
+
+#botao_modo:hover {
+  background-color: #388e3c; /* Verde escuro ao passar o mouse */
 }
